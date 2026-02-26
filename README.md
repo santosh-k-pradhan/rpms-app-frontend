@@ -45,17 +45,20 @@ The application follows a feature-based modular structure:
 
 ```bash
 git clone https://github.com/santosh-k-pradhan/rpms-app-frontend.git
-
+```
 cd frontend
 
+### 2️⃣ Install Dependencies
+```bash
 #Install Dependencies
 
 npm install
-
-#Run Application
-
+```
+### 3️⃣ Run Application
+```bash
 ng serve
-
+```
 #Application will run at:
-
+```bash
 http://localhost:4200
+```
