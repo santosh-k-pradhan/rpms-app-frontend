@@ -26,20 +26,6 @@ This UI allows users to:
 
 <img width="352" height="866" alt="image" src="https://github.com/user-attachments/assets/6ad70209-8109-4510-aec5-f080430cae5c" />
 
-src/
-├── app/
-│ ├── core/
-│ │ └── services/
-│ ├── features/
-│ │ ├── upload/
-│ │ └── pricing-list/
-│ ├── shared/
-│ │ └── models/
-│ ├── app.component.ts
-│ └── app.routes.ts
-├── assets/
-└── main.ts
-
 ---
 
 ## 🏗️ Architecture Overview
@@ -59,11 +45,17 @@ The application follows a feature-based modular structure:
 
 ```bash
 git clone https://github.com/santosh-k-pradhan/rpms-app-frontend.git
+
 cd frontend
+
 #Install Dependencies
+
 npm install
+
 #Run Application
+
 ng serve
+
 #Application will run at:
 
 http://localhost:4200
