@@ -1,59 +1,66 @@
-# Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+# Retail Pricing Management UI
 
-## Development server
+Frontend application for managing pricing data across a global retail chain operating stores.
 
-To start a local development server, run:
+This UI allows users to:
 
+- Upload pricing data via CSV
+- Search pricing records
+- Edit and update pricing entries
+- View store-wise pricing data
+
+---
+
+## 🚀 Tech Stack
+
+- Angular 17 (Standalone Components)
+- TypeScript
+- RxJS
+- Jest (Unit Testing)
+- Angular Router
+- REST API integration
+
+---
+
+## 📂 Project Structure
+
+<img width="352" height="866" alt="image" src="https://github.com/user-attachments/assets/6ad70209-8109-4510-aec5-f080430cae5c" />
+
+---
+
+## 🏗️ Architecture Overview
+
+The application follows a feature-based modular structure:
+
+- **Core Module** → Services & singleton logic
+- **Feature Modules** → Business features (Upload, Pricing List)
+- **Shared Module** → Interfaces, models, reusable utilities
+- **Standalone Components** → No NgModules required
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/santosh-k-pradhan/rpms-app-frontend.git
+```
+cd frontend
+
+### 2️⃣ Install Dependencies
+```bash
+#Install Dependencies
+
+npm install
+```
+### 3️⃣ Run Application
 ```bash
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+#Application will run at:
 ```bash
-ng generate component component-name
+http://localhost:4200
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+isit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
