@@ -1,0 +1,66 @@
+<div class="container mt-4">
+
+  <div class="card p-4 shadow">
+    <h4>Search Pricing Records</h4>
+
+    <div class="row">
+      <div class="col-md-4">
+        <input class="form-control"
+               placeholder="Store ID"
+               [(ngModel)]="filters.storeId">
+      </div>
+
+      <div class="col-md-4">
+        <input class="form-control"
+               placeholder="SKU"
+               [(ngModel)]="filters.sku">
+      </div>
+
+      <div class="col-md-4">
+        <input type="date"
+               class="form-control"
+               [(ngModel)]="filters.date">
+      </div>
+    </div>
+
+    <button class="btn btn-success mt-3"
+            (click)="search()">
+      Search
+    </button>
+  </div>
+
+  <div class="card p-4 shadow mt-4"
+       *ngIf="records.length > 0">
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Store</th>
+          <th>SKU</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let r of records">
+          <td><input [(ngModel)]="r.storeId" class="form-control"></td>
+          <td><input [(ngModel)]="r.sku" class="form-control"></td>
+          <td><input [(ngModel)]="r.productName" class="form-control"></td>
+          <td><input [(ngModel)]="r.price" type="number" class="form-control"></td>
+          <td><input [(ngModel)]="r.date" type="date" class="form-control"></td>
+          <td>
+            <button class="btn btn-sm btn-primary"
+                    (click)="save(r)">
+              Save
+            </button>
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+</div>
