@@ -23,6 +23,9 @@ This UI allows users to:
 ---
 
 ## 📂 Project Structure
+
+<img width="352" height="866" alt="image" src="https://github.com/user-attachments/assets/6ad70209-8109-4510-aec5-f080430cae5c" />
+
 src/
 ├── app/
 │ ├── core/
